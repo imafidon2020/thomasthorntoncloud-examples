@@ -27,3 +27,5 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Azure-DevOps-Container-Instance/aspnet-core-dotnet-core/Dockerfile'
         tags: |
           $(tag)
+    - task: PublishBuildArtifacts@1
+
